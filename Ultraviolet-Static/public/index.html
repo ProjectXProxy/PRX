@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0, shrink-to-fit=no"
+    />
+    <title>Project X</title>
+    <meta
+      name="theme-color"
+      media="(prefers-color-scheme: dark)"
+      content="#434c5e"
+    />
+    <meta name="googlebot" content="index, follow, snippet" />
+    <link rel="shortcut icon" content="favicon.ico" />
+    <link rel="stylesheet" href="index.css" />
+    <script src="px/px.bundle.js" defer></script>
+    <script src="px/px.config.js" defer></script>
+    <script src="register-sw.js" defer></script>
+    <script src="search.js" defer></script>
+    <script src="index.js" defer></script>
+  </head>
+
+  <body>
+    <div
+      title="Project X"
+      class="flex-center logo-wrapper header-center"
+    >
+      <h1>Project X</h1>
+    </div>
+    <div class="flex-center desc left-margin">
+      <p>
+        Project X is a great web proxy that aims to bypass browsing restrictions in school and other places
+      </p>
+    </div>
+
+    <form id="px-form" class="flex-center">
+      <input
+        id="px-search-engine"
+        value="https://www.google.com/search?q=%s"
+        type="hidden"
+      />
+      <input id="px-address" type="text" placeholder="Search the web freely" />
+    </form>
+    <div class="desc left-margin">
+      <p id="px-error"></p>
+      <pre id="px-error-code"></pre>
+    </div>
+    <footer>
+      <div>
+        <a
+          title="The repo"
+          href="https://github.com/ProjectXProxy/ProjectX"
+          >GitHub
+        </a>
+      </div>
+    </footer>
+  </body>
+</html>
